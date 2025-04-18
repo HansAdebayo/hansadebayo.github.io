@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Hans Orden BADA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="profile-container">
+      <img src="photo.jpg" alt="Photo de Hans" class="profile-pic" />
+      <div class="tooltip">Je transforme les données en solutions utiles 🌍📊</div>
+    </div>
+    <h1>Hans Orden BADA</h1>
+    <p>Alternant Data Scientist / Actuaire passionné de projets innovants</p>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#experience">Expériences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>
+      Je suis actuellement en Master 2 en ingénierie des données à Toulouse. Avec 2 ans d'expérience en alternance,
+      je suis passionné par l'analyse, l'automatisation, et les projets à impact. Je cherche à créer des solutions
+      simples, efficaces et utiles, que ce soit en actuariat, en data science ou pour l’innovation tech.
+    </p>
+  </section>
+
+  <section id="parcours">
+    <h2>Mon parcours</h2>
+    <div class="card">
+      <h3>2024 - 2026 : Master Ingénierie des Données – Université Toulouse Jean Jaurès</h3>
+      <ul>
+        <li>Étude avancée des techniques de machine learning, modélisation statistique et systèmes big data.</li>
+        <li>Projets autour de la data science appliquée à l’assurance et à la santé.</li>
+        <li>Utilisation d’outils comme PySpark, Hadoop, Power BI et Python dans des projets concrets.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>2021 - 2024 : BUT Sciences des Données – IUT de Perpignan</h3>
+      <ul>
+        <li>Apprentissage des bases solides en statistiques, traitement et visualisation des données.</li>
+        <li>Réalisation de projets tutorés sur l’analyse de données environnementales et économiques.</li>
+        <li>Initiation à l’intelligence artificielle et aux systèmes décisionnels.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>2019 - 2021 : Baccalauréat Scientifique – Spécialité Mathématiques</h3>
+      <ul>
+        <li>Développement de la rigueur mathématique et des bases logiques essentielles au raisonnement scientifique.</li>
+        <li>Participation à des clubs scientifiques et ateliers de codage.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Expérience professionnelle</h2>
+  
+    <div class="card experience-item">
+      <div class="experience-text">
+        <h3>Alternant Data Scientist – Watt&Co (2023 – Aujourd'hui)</h3>
+        <ul>
+          <li>Création de tableaux de bord Power BI pour le suivi des performances des projets photovoltaïques.</li>
+          <li>Analyse de données en SQL et Python pour identifier des leviers d'optimisation énergétique.</li>
+          <li>Collaboration avec les équipes techniques et décisionnaires pour automatiser les rapports hebdomadaires.</li>
+          <li>Réalisation d’études statistiques sur la rentabilité des installations solaires.</li>
+          <li>Participation à la digitalisation des flux d’information interne.</li>
+        </ul>
+      </div>
+      <div class="experience-img-wrapper">
+        <img src="wattco.jpg" alt="Illustration Watt&Co" class="experience-img">
+      </div>
+    </div>
+  
+    <div class="card experience-item">
+      <div class="experience-text">
+        <h3>Stagiaire Data Analyst – Enedis (2023)</h3>
+        <ul>
+          <li>Analyse de plus de 100 000 lignes de données pour anticiper la consommation électrique locale.</li>
+          <li>Automatisation des traitements sous Python, réduisant le temps d’analyse de 30 %.</li>
+          <li>Production de rapports compréhensibles pour les équipes non techniques.</li>
+          <li>Utilisation de Power BI pour visualiser les écarts entre consommation estimée et réelle.</li>
+          <li>Travail collaboratif avec des ingénieurs réseaux pour prioriser les interventions techniques.</li>
+        </ul>
+      </div>
+      <div class="experience-img-wrapper">
+        <img src="img/enedis.jpg" alt="Illustration Enedis" class="experience-img">
+      </div>
+    </div>
+  </section>
+  
+
+  <form class="contact-form" action="https://formspree.io/f/mnnpkaog" method="POST">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+  
+    <button type="submit" class="btn-submit">Envoyer</button>
+  </form>
+  
+  
+  
+
+  <footer>
+    &copy; 2025 Hans Orden BADA. Tous droits réservés.
+  </footer>
+</body>
+</html>
