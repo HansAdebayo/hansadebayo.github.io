@@ -321,29 +321,46 @@ nav.scrolled { padding: 0.85rem 3rem; }
   color: var(--text-muted);
   margin-bottom: 1.25rem;
 }
-.hero-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.hero-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.bio-item {
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
-}
-.hero-stat {
   background: var(--bg2);
+  padding: 0.65rem 0.85rem;
   border-radius: 10px;
-  padding: 0.75rem;
-  text-align: center;
+  border: 1px solid var(--border2);
+  transition: border-color 0.2s, transform 0.2s;
 }
-.hero-stat .num {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--accent);
-  line-height: 1;
+.bio-item:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
 }
-.hero-stat .lbl {
+.bio-icon {
+  font-size: 1.1rem;
+  min-width: 24px;
+}
+.bio-text {
+  display: flex;
+  flex-direction: column;
+}
+.bio-text strong {
   font-size: 0.72rem;
   color: var(--text-dim);
-  margin-top: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-bottom: 0.1rem;
+}
+.bio-text span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.2;
 }
 .hero-tags {
   display: flex;
